@@ -4,7 +4,9 @@ namespace ToDoApplication.Repositories
 {
     public interface IToDoRepository
     {
-        void AddAll(ToDo[] toDos);
         ToDo[] GetAll();
+        void AddAll(ToDo[] toDos);
+        void UpdateAll(ToDo[] toDos);
+        void DeleteToDos(long[] toDos);
     }
 }

@@ -7,8 +7,8 @@ using ToDoApplication.Database.Models;
 
 namespace ToDoApplication.Domain.ToDoEntities
 {
-    public class AddToDoRequest
+    public class ToDoDataResponse : BaseResponse
     {
-        public ToDo[]? ToDoList {  get; set; }
+        public List<ToDo>? ToDoList { get; set; }
     }
 }
