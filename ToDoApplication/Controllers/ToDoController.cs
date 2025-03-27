@@ -35,7 +35,7 @@ namespace ToDoApplication.Controllers
         }
 
         [HttpPost(Name = "AddToDos")]
-        public async Task<BaseResponse> AddAsync([FromBody] ToDoDataRequest request)
+        public async Task<BaseResponse> AddAsync([FromBody] AddToDoDataRequest request)
         {
             try
             {
@@ -64,7 +64,7 @@ namespace ToDoApplication.Controllers
         }
 
         [HttpPut(Name = "UpdateToDos")]
-        public async Task<BaseResponse> UpdateAsync([FromBody] ToDoDataRequest request)
+        public async Task<BaseResponse> UpdateAsync([FromBody] UpdateToDoDataRequest request)
         {
             try
             {
